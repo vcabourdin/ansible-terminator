@@ -11,7 +11,8 @@ Ruby
 Role Variables
 --------------
 
-None
+terminator_config_path: "~/.config/terminator/"
+> Be careful that it will copy the base configuration file in the user home directory, so if you run this playbook as root it will be copied in root's home
 
 Dependencies
 ------------

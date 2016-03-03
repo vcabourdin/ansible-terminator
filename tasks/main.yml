@@ -4,6 +4,8 @@
 
 - name: Ensure existence of terminator directory config
   file: state=directory recurse=yes path="{{ terminator_config_path }}"
+  when: terminator_config_path != ""
 
 - name: Copy configuration file
-  copy: src=config dest="{{ terminator_config_path }}/config"
+  copy: src=config dest="{{ terminator_config_path }}/config" force=no
+  when: terminator_config_path != ""
