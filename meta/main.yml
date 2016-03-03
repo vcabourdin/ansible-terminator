@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Valentin Cabourdin
+  description: Terminator installation on Debian/Ubuntu
+
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+    - name: Debian
+      versions:
+        - jessie
+        - wheezy
+
+  galaxy_tags:
+    - Terminator
+
+dependencies: []

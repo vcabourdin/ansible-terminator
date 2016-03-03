@@ -1,0 +1,34 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
+  window_state = maximise
+  focus = system
+[keybindings]
+  split_horiz = <Primary>1
+  new_window = <Primary>n
+  close_term = <Primary>w
+  split_vert = <Primary>2
+  new_tab = <Primary>t
+  hide_window = <Primary>section
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    use_system_font = False
+    autoclean_groups = False
+    background_darkness = 0.84
+    background_type = transparent
+    background_image = None
+    foreground_color = "#ffffff"
+    scroll_on_output = False
+    font = Liberation Mono 12
+    background_color = "#300a24"
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

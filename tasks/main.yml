@@ -1,0 +1,9 @@
+---
+- name: Install terminator package
+  apt: name=terminator state=latest
+
+- name: Ensure existence of terminator directory config
+  file: state=directory recurse=yes path="{{ terminator_config_path }}"
+
+- name: Copy configuration file
+  copy: src=config dest="{{ terminator_config_path }}/config"
